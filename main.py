@@ -1,4 +1,9 @@
 def convert_to_snake_case(pascal_or_camel_cased_string):
+    # return usingLoop(pascal_or_camel_cased_string)
+    return using_list_comprehension(pascal_or_camel_cased_string)
+
+
+def usingLoop(pascal_or_camel_cased_string):
     snake_cased_char_list = []
     for char in pascal_or_camel_cased_string:
         if char.isupper():
@@ -11,7 +16,11 @@ def convert_to_snake_case(pascal_or_camel_cased_string):
 
     return clean_snake_cased_string
 
+def using_list_comprehension(pascal_or_camel_cased_string):
+    snake_cas_char_list = [ '_' + char.lower() if char.isupper() else char for char in pascal_or_camel_cased_string]
+    return ''.join(snake_cas_char_list)
+
 def main():
-    print(convert_to_snake_case('aLongString'))
+    print(convert_to_snake_case('IAmAPascalCasedString'))
 
 main()
