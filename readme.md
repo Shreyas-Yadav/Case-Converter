@@ -1,3 +1,19 @@
-List Comprehension is a way to construct a new Python list from an iterable types: lists, tuples, and strings. All without using a for loop or the `.append()` list method.
+# Case Converter
 
-In this project,program that takes a camelCase or PascalCase formatted string as input and converts that to a snake_case formatted string using two approaches. First, for loop and then list comprehension to achieve the same results. You'll see how list comprehension can make your code more concise.
+This project is a simple case converter written in Python. It allows you to convert text between different cases such as uppercase, lowercase, and title case.
+
+
+## Usage
+
+To use the case converter, run the following command:
+```
+python main.py
+```
+
+You will be prompted to enter the text you want to convert and select the desired case.
+
+## Features
+
+- Convert text to uppercase
+- Convert text to lowercase
+- Convert text to title case
